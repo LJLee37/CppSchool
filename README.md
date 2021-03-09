@@ -47,3 +47,22 @@
 * 미국가서 석사해라.
 * 출석 면제니까 개발 열심히 하고 시험 잘 봐라.
 
+### 9th Mar.
+
+* cin
+* const
+* sizeof()
+
+#### 수업중
+
+* \>\> : stream extraction operator
+* cin
+    * has input stream(buffer)
+    * keep keyboard input in the input buffer until \n is typed.
+* NULL 만날 때까지 출력.
+* delimit : 구분자
+
+#### 수업 후
+
+* 과제 있음.
+* 읽기 과제 있음.
