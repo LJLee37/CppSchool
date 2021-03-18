@@ -13,6 +13,7 @@ public:
 };
 
 double linelength(const Position& pos1, const Position& pos2);
+bool compare(const double& line1, const double& line2);
 int main()
 {
     double temp_x, temp_y;
@@ -30,11 +31,15 @@ int main()
     Position line2Pos2(temp_x, temp_y);
     double line1 = linelength(line1Pos1, line1Pos2);
     double line2 = linelength(line2Pos1, line2Pos2);
-    cout << "The longer line\'s length : " << (line1 > line2 ? line1 : line2) << endl;
+    cout << "The longer line\'s length : " << (compare(line1, line2) ? line1 : line2) << endl;
     return 0;
 }
 
 double linelength(const Position& pos1, const Position& pos2)
 {
     return sqrt(pow(pos1.x - pos2.x, 2) + pow(pos1.y - pos2.y, 2));
+}
+bool compare(const double& line1, const double& line2)
+{
+    return line1 > line2;
 }
